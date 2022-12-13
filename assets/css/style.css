@@ -575,6 +575,7 @@ section {
   font-size: 18px;
   border-bottom: 5px solid #FF6200;
 }
+
 /* .portfolio .portfolio-item {
   margin-bottom: 30px;
 } */
@@ -1158,5 +1159,26 @@ section {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #portfolio-img {
+    grid-template-areas:
+    "portfolio-1 portfolio-1"
+    "portfolio-2 portfolio-3"
+    "portfolio-4  portfolio-5";
+  }
+}
+@media only screen and (max-width: 450px) {
+  
+  #portfolio-img {
+    grid-template-areas:
+    "portfolio-1"
+    "portfolio-2"
+    "portfolio-3";
   }
 }
