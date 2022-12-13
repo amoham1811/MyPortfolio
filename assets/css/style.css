@@ -418,7 +418,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -518,11 +518,68 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
+#portfolio-img {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  height: 70vh;
+  position: relative;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-areas:
+  "portfolio-1 portfolio-1 portfolio-1"
+  "portfolio-2 portfolio-3 portfolio-3"
+  "portfolio-4  portfolio-5 portfolio-5";
+}
+#portfolio-1 {
+  grid-area: portfolio-1;
+  background-image: url("/assets/img/portfolio/portfolio-1.jpg");
 }
 
-.portfolio #portfolio-flters {
+#portfolio-2 {
+  grid-area: portfolio-2;
+  background-image: url("/assets/img/portfolio/portfolio-2.jpg");
+}
+#portfolio-3 {
+  grid-area: portfolio-3;
+  background-image: url("/assets/img/portfolio/portfolio-3.jpg");
+  justify-content: space-around;
+  cursor: pointer;
+}
+#portfolio-4 {
+  grid-area: portfolio-4;
+  background-image: url("/assets/img/portfolio/portfolio-4.jpg");
+  justify-content: space-around;
+  cursor: pointer;
+}
+#portfolio-5 {
+  grid-area: portfolio-5;
+  background-image: url("/assets/img/portfolio/portfolio-5.jpg");
+  justify-content: space-around;
+  cursor: pointer;
+}
+.portfolio-item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+}
+/* .portfolio .portfolio-item {
+  margin-bottom: 30px;
+} */
+
+/* .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -530,9 +587,9 @@ section {
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
-}
+} */
 
-.portfolio #portfolio-flters li {
+/* .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -543,17 +600,17 @@ section {
   color: #272829;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
-}
+} */
 
-.portfolio #portfolio-flters li:hover,
+/* .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #149ddd;
-}
+} */
 
-.portfolio #portfolio-flters li:last-child {
+/* .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
-}
-
+} */
+/* 
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -570,8 +627,8 @@ section {
   top: 0;
   bottom: 0;
   transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
+  /* z-index: 2; */
+  /* opacity: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -614,7 +671,7 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
