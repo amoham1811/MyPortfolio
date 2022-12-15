@@ -408,18 +408,11 @@ section {
   font-size: 18px;
   border-bottom: 5px solid #FF6200;
 }
-<<<<<<< HEAD
 #portfolio-1 {
   grid-area: portfolio-1;
   background-repeat: no-repeat;
   
 }
-=======
-
-/* .portfolio .portfolio-item {
-  margin-bottom: 30px;
-} */
->>>>>>> 69cbdb719e48543ce2d9247961b4dc12460ba719
 
 #portfolio-2 {
   grid-area: portfolio-2;
@@ -713,26 +706,5 @@ section {
     position: static;
     width: auto;
     padding-right: 20px 15px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  #headline {
-    position: static;
-    margin: 20px;
-  }
-  #portfolio-img {
-    grid-template-areas:
-    "portfolio-1 portfolio-1"
-    "portfolio-2 portfolio-3"
-    "portfolio-4  portfolio-5";
-  }
-}
-@media only screen and (max-width: 450px) {
-  
-  #portfolio-img {
-    grid-template-areas:
-    "portfolio-1"
-    "portfolio-2"
-    "portfolio-3";
   }
 }
